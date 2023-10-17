@@ -1,8 +1,8 @@
-docker rm -f vergil-centos
-docker run -itd --name vergil-centos centos:7
-docker cp centos-installer_pythonenv.sh vergil-centos:/home
-docker cp Python-3.10.13.tgz vergil-centos:/home
-docker cp gcc-8.5.0.tar.gz vergil-centos:/home
-docker cp resolv-template.conf vergil-centos:/home
-docker cp D:\Project\software\Product\dependency vergil-centos:/home
-docker exec -it medishare-centos /bin/bash
+docker rm -f centos-vergil
+docker run -itd --name centos-vergil centos:7
+docker cp centos-installer_pythonenv.sh centos-vergil:/home
+docker cp Python-3.10.13.tgz centos-vergil:/home
+docker cp gcc-8.5.0.tar.gz centos-vergil:/home
+docker cp resolv-template.conf centos-vergil:/home
+docker cp D:\Project\software\Product\dependency centos-vergil:/home
+docker exec -it centos-vergil /bin/bash

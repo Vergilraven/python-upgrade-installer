@@ -134,7 +134,7 @@ detect_os() {
         OS_NAME=${ID}
     elif [ -f /etc/centos-release ]; then
         OS_NAME="centos"
-    elif [ -f /et/os-release ];then
+    elif [ -f /etc/os-release ];then
         OS_NAME="ubuntu"
     else
         OS_NAME="unknown"
